@@ -21,4 +21,3 @@ $("input[type='text']").on("keypress",function(event){
 $(".fa-plus").on("click", function(){
 	$("input[type='text']").slideToggle();
 });
-	$("input[type='text']").fadeOut(0.1);
