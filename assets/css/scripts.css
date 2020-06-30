@@ -12,6 +12,23 @@ body {
 	background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to left, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+.delete {
+	background-color: #ff4030;
+	height: 40px;
+	color: white;
+	text-align: center;
+	width: 0;
+	display: inline-block;
+	margin-right: 20px;
+	margin-left: 0;
+	padding: 0;
+	opacity: 0;
+}
+li:hover .delete {
+	width: 40px;
+	opacity: 1.0;
+	transition: 0.2s linear;
+}
 h1{
 	padding: 20px 30px;
 	margin: 0;
@@ -31,6 +48,8 @@ input {
 	background-color: #aaa;
 	box-sizing: border-box;
 	padding: 15px 15px 15px 20px;
+	border: 3px solid rgba(0, 0, 0, 0);
+	display: none;
 }
 input:focus {
 	border: 3px solid #2040ff;
@@ -39,7 +58,6 @@ input:focus {
 	color: #2040ff;
 }
 li {
-	padding-left: 20px;
 	height: 40px;
 	line-height: 40px;
 	background-color: #fff; 

@@ -18,3 +18,7 @@ $("input[type='text']").on("keypress",function(event){
 		$("ul").append("<li><span class='delete'><i class='fa fa-trash-o'></i></span> "+newTodo+"</li>");
 	}
 });
+$(".fa-plus").on("click", function(){
+	$("input[type='text']").slideToggle();
+});
+	$("input[type='text']").fadeOut(0.1);
